@@ -1,0 +1,171 @@
+@import "/css/reset.css";
+a.button_white, a.button_blue, a.button_green, a.button_orange{
+	margin: 20px auto;
+	width: 83px;
+	height: 83px;
+	display: block;
+	background: #ddd;
+	text-align: center;
+	line-height: 90px;
+	border-radius: 50%;
+	padding: 6px; 
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+a.button_white:after, a.button_blue:after, a.button_green:after, a.button_orange:after{
+	content: "";
+	width: 65px;
+	height: 52px;
+	left: 15px;
+	top: 7%;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+}
+a.button_white:before, a.button_blue:before, a.button_green:before, a.button_orange:before{
+	content: "";
+	display: block;
+	border-radius: 50%;
+	width: 83px;
+	height: 83px;
+	top: 5px;
+	left: 5px;
+	position: absolute;
+}
+
+a.button_white .icon_white, a.button_blue .icon_blue,a.button_green .icon_green, a.button_orange .icon_orange{
+	background: url(/home.png);
+	width: 32px;
+	height: 30px;
+	top: 33px;
+	left: 31px;
+	position: absolute;
+}
+/*White*/
+a.button_white{
+	background: linear-gradient(to top, rgba(241,241,241,1), rgba(240,240,240,1));
+	border: 1px solid rgb(217,217,217);
+}
+a.button_white:hover .icon_white{
+	background-position: 31px 0px; 
+}
+a.button_white:after{
+	background: linear-gradient(to top, rgba(241,241,241,.22), rgba(240,240,240,.33));
+}
+a.button_white:before{
+	background: linear-gradient(to top, rgba(190,190,190,1), rgba(240,240,240,.2));
+	border: 1px solid rgb(217,217,217);
+}
+a.button_white:hover:before{
+	background: linear-gradient(to top, rgba(94,94,94,1), rgba(173,173,173,.22));
+	box-shadow: none;
+}
+a.button_white:active::after{
+	background: none;
+}
+a.button_white:active::before{
+	background: linear-gradient(to bottom, rgba(221,221,221,1), rgba(240,240,240,.22));
+}
+
+
+
+/*Blue*/
+a.button_blue{
+	background: linear-gradient(to top, rgba(18,171,220,.5), rgba(137,223,251,.34));
+	border: 1px solid rgb(11,169,211) ;
+}
+a.button_blue .icon_blue{
+	background-position: 0px 60px; 
+}
+a.button_blue:hover .icon_blue{
+	background-position: 31px 60px; 
+}
+a.button_blue:after{
+	background: linear-gradient(to top, rgba(255,255,255,.11), rgba(255,255,255,.33));
+}
+a.button_blue:before{
+	background: linear-gradient(to top, rgba(0,164,218,1), rgba(132,224,254,.22));
+	border: 1px solid rgb(11,169,211);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,.08) inset;
+}
+a.button_blue:hover:before{
+	background: linear-gradient(to top, rgba(1,107,174,1), rgba(132,215,254,.22));
+	box-shadow: none;
+}
+a.button_blue:active::after{
+	background: none;
+}
+a.button_blue:active::before{
+	background: linear-gradient(to bottom, rgba(0,164,218,1), rgba(132,224,254,.22));
+}
+
+
+
+
+/*Green*/
+a.button_green{
+	background: linear-gradient(to top, rgba(178,229,0,.5), rgba(213,255,65,.34));
+	border: 1px solid rgb(161,207,0) ;
+}
+a.button_green .icon_green{
+	background-position: 0px 90px; 
+}
+a.button_green:hover .icon_green{
+	background-position: 31px 90px; 
+}
+a.button_green:after{
+	background: linear-gradient(to top, rgba(255,255,255,.11), rgba(255,255,255,.33));
+}
+a.button_green:before{
+	background: linear-gradient(to top, rgba(178,229,0,1), rgba(218,255,87,.22));
+	border: 1px solid rgb(161,207,0);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,.02) inset;
+}
+a.button_green:hover:before{
+	background: linear-gradient(to top, rgba(135,229,0,1), rgba(218,255,87,.22));
+	box-shadow: none;
+}
+a.button_green:active::after{
+	background: none;
+}
+a.button_green:active::before{
+	background: linear-gradient(to bottom, rgba(178,229,0,1), rgba(218,255,87,.22));
+}
+
+
+
+
+
+/*Orange*/
+a.button_orange{
+	background: linear-gradient(to top, rgba(229,129,0,1), rgba(229,189,0,.9));
+	border: 1px solid rgb(229,124,0);
+}
+a.button_orange .icon_orange{
+	background-position: 0px 30px; 
+}
+a.button_orange:hover .icon_orange{
+	background-position: 31px 30px; 
+}
+a.button_orange:hover{
+	background: linear-gradient(to top, rgba(229,97,0,.9), rgba(229,145,0,.9));
+}
+a.button_orange:after{
+	background: linear-gradient(to top, rgba(255,255,255,.11), rgba(255,255,255,.33));
+}
+a.button_orange:before{
+	background: linear-gradient(to top, rgba(229,156,0,1), rgba(225,217,65,1));
+	border: 1px solid rgb(199,101,0);
+	box-shadow: 0px 0px 6px 2px rgba(255,255,255,.18) inset;
+}
+a.button_orange:hover:before{
+	background: linear-gradient(to top, rgba(229,119,0,1), rgba(255,177,65,.22));
+	
+}
+a.button_orange:active::after{
+	background: none;
+}
+a.button_orange:active::before{
+	background: linear-gradient(to bottom, rgba(229,156,0,1), rgba(1225,217,65,1));
+}
